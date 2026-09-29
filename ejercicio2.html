@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ejercicio 2 - Estados</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+<header class="bg-dark text-white py-3">
+<div class="container">
+<h1 class="h4 mb-1">ESCUELA DE INGENIERÍA EN COMPUTACIÓN</h1>
+<p class="mb-0">Carrera: Ingeniería en Desarrollo de Software · Modalidad: Presencial · Materia: Diseño Web Adaptable</p>
+</div>
+</header>
+<main class="container py-4">
+<h2 class="mb-4">Ejercicio 2: texto de ayuda y estados</h2>
+<form class="col-12 col-md-8">
+<div class="mb-3">
+<label for="clave5" class="form-label">Contraseña</label>
+<input type="password" class="form-control" id="clave5" aria-describedby="ayudaClave" minlength="8" maxlength="20" pattern="(?=.*[A-Za-z])(?=.*\d)\S+">
+<div id="ayudaClave" class="form-text">De 8 a 20 caracteres, con letras y números, sin espacios ni emojis.</div>
+</div>
+<div class="mb-3">
+<label for="claveReadonly" class="form-label">Contraseña</label>
+<input type="password" class="form-control" id="claveReadonly" value="TechStore2026" readonly>
+<div class="form-text">De 8 a 20 caracteres.</div>
+</div>
+<div class="mb-3"><label for="codigo" class="form-label">Código de cliente</label><input type="text" class="form-control" id="codigo" value="CLI-2026-001"></div>
+<fieldset disabled class="border rounded p-3 mb-3">
+<legend class="float-none w-auto px-2 fs-6">Datos de facturación (disponible próximamente)</legend>
+<label for="nit" class="form-label">NIT</label><input type="text" class="form-control" id="nit" value="0614-123456-123-4">
+</fieldset>
+<button class="btn btn-primary">Guardar</button>
+</form>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
